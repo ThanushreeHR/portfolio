@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thanushree H. R - Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@600;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background: linear-gradient(135deg, #1cb5e0, #000046); /* gradient background */
+      color: #f0f0f0; /* light text for contrast */
+      font-size: 21px;
+      scroll-behavior: smooth;
+    }
+
+    /* HEADER */
+    header {
+      background-color: rgba(0, 21, 51, 0.85);
+      color: white;
+      padding: 30px 0;
+      text-align: center;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+    header h1 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 46px;
+      margin-bottom: 12px;
+    }
+    header p {
+      font-size: 26px;
+    }
+
+    /* NAVIGATION */
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: rgba(0, 33, 71, 0.9);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      color: white;
+      padding: 20px 32px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 22px;
+      transition: background-color 0.3s, transform 0.2s;
+    }
+    nav a:hover {
+      background-color: rgba(0, 26, 51, 0.9);
+      transform: scale(1.05);
+    }
+
+    /* SECTIONS */
+    section {
+      padding: 60px;
+      max-width: 1000px;
+      margin: auto;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeUp 1s forwards;
+    }
+    h2 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 36px;
+      color: #ffdd57;
+      border-bottom: 3px solid #ccc;
+      padding-bottom: 10px;
+    }
+
+    /* ABOUT */
+    .about-container {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 25px;
+    }
+    .about-container img {
+      width: 230px;
+      height: 230px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 5px solid #ffdd57;
+      transition: transform 0.3s;
+    }
+    .about-container img:hover {
+      transform: scale(1.05);
+    }
+
+    /* LISTS */
+    ul {
+      list-style: none;
+      padding: 0;
+      font-size: 21px;
+    }
+    li {
+      background: rgba(255, 255, 255, 0.1);
+      margin: 14px 0;
+      padding: 16px;
+      border-radius: 5px;
+      transition: transform 0.2s, background-color 0.3s;
+    }
+    li:hover {
+      transform: scale(1.03);
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    li i {
+      color: #ffdd57;
+      margin-right: 10px;
+      font-size: 22px;
+    }
+
+    /* CONTACT */
+    #contact p {
+      margin: 12px 0;
+    }
+    #contact i {
+      color: #ffdd57;
+      margin-right: 10px;
+      font-size: 24px;
+    }
+    #contact a {
+      color: #ffdd57;
+      text-decoration: none;
+    }
+    #contact a:hover {
+      text-decoration: underline;
+    }
+
+    /* CERTIFICATES */
+    #certificates a {
+      color: #ffdd57; /* bright gold */
+      font-weight: bold;
+      text-decoration: none;
+    }
+    #certificates a:hover {
+      color: #ffffff; /* white on hover */
+      text-shadow: 0 0 5px #ffdd57;
+    }
+
+    /* FOOTER */
+    footer {
+      background-color: rgba(0, 21, 51, 0.85);
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 21px;
+      margin-top: 30px;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    /* ANIMATIONS */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <h1>Thanushree H. R</h1>
+    <p>Engineering Student | Python Developer | Machine Learning Enthusiast</p>
+  </header>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#education">Education</a>
+    <a href="#projects">Projects</a>
+    <a href="#certificates">Certificates</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="about-container">
+      <img src="profile.jpg" alt="Thanushree H. R">
+      <p>
+        To work in an environment that encourages me to succeed and grow professionally, where I can utilize my skills and knowledge appropriately.
+        I aim to join an organization that provides opportunities to apply my academic knowledge in real-world projects while learning new technologies
+        and contributing to impactful engineering solutions.
+      </p>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <h2>Skills & Languages</h2>
+    <ul>
+      <li><i class="fab fa-python"></i> Python</li>
+      <li><i class="fab fa-html5"></i> HTML</li>
+      <li><i class="fas fa-robot"></i> Machine Learning</li>
+      <li><i class="fas fa-code"></i> C, C++</li>
+      <li><i class="fas fa-database"></i> DBMS</li>
+      <li><i class="fas fa-language"></i> Kannada, English, Hindi</li>
+    </ul>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education">
+    <h2>Education</h2>
+    <ul>
+      <li><i class="fas fa-graduation-cap"></i> <strong>B.E.</strong> - KVG College of Engineering, Sullia (2026) — CGPA: 8.79</li>
+      <li><i class="fas fa-school"></i> <strong>PUC</strong> - Government PU College, Kudige (2022) — 89.8%</li>
+      <li><i class="fas fa-book-open"></i> <strong>SSLC</strong> - Angela Vidyanikethan, Kudige (2019) — 92.2%</li>
+    </ul>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <ul>
+      <li><i class="fas fa-coins"></i> <strong>Coin Detection:</strong> Developed a system to detect and identify coins using image processing techniques.
+          This system helps retrieve information about a coin in real time.  
+          <em>Tools Used:</em> Python, OpenCV.</li>
+      <li><i class="fas fa-tags"></i> <strong>Price Comparison:</strong> Created a tool to compare the prices of a product across different websites, using either search queries or image inputs.  
+          <em>Tools Used:</em> Python, OpenCV.</li>
+    </ul>
+  </section>
+
+  <!-- CERTIFICATES -->
+  <section id="certificates">
+    <h2>Certificates</h2>
+    <ul>
+      <li><i class="fas fa-certificate"></i> <a href="#" target="_blank">Certificate of Artificial Intelligence (Elewayte)</a></li>
+      <li><i class="fas fa-certificate"></i> <a href="#" target="_blank">Basics of Python (Infosys Springboard)</a></li>
+    </ul>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p><i class="fas fa-envelope"></i>Email: 
+       <a href="mailto:thanushreehebbalerajendra@gmail.com">thanushreehebbalerajendra@gmail.com</a>
+    </p>
+    <p><i class="fas fa-phone"></i>Phone: 9035988320</p>
+    <p><i class="fab fa-linkedin"></i>LinkedIn: 
+       <a href="https://www.linkedin.com/in/thanushreehr-1b3b3233a" target="_blank">Profile</a>
+    </p>
+    <p><i class="fab fa-github"></i>GitHub: 
+       <a href="https://github.com/ThanushreeHR/T" target="_blank">Repository</a>
+    </p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 Thanushree H. R | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
